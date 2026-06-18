@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plum Overview</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50 p-8">
+      <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-12">
+       
+        <div class="text-center mb-8 pb-6 border-b-2 border-blue-600">
+          <h1 class="text-4xl font-bold text-blue-600 mb-2">StudyVault</h1>
+          <p class="text-xl text-gray-600">Educational Resource Archive - Project Overview</p>
+        </div>
+
+ 
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">1</span>
+            Tech Stack
+          </h2>
+          <div class="grid grid-cols-2 gap-4 ml-12">
+            <div class="bg-blue-50 p-4 rounded">
+              <p class="font-semibold text-gray-800">Frontend</p>
+              <p class="text-gray-600">React Native + NativeWind</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded">
+              <p class="font-semibold text-gray-800">Backend</p>
+              <p class="text-gray-600">Node.js + Express</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded">
+              <p class="font-semibold text-gray-800">Database</p>
+              <p class="text-gray-600">MongoDB</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded">
+              <p class="font-semibold text-gray-800">Storage</p>
+              <p class="text-gray-600">Cloudinary</p>
+            </div>
+            <div class="bg-blue-50 p-4 rounded col-span-2">
+              <p class="font-semibold text-gray-800">Authentication</p>
+              <p class="text-gray-600">Firebase Auth</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">1.1</span>
+            Color Pallete
+          </h2>
+          <div class="grid grid-cols-2 gap-4 ml-12">
+            <div class="bg-[#5A2D81] p-4 rounded">
+              <p class="font-semibold text-white">Primary Plum</p>
+              <p class="text-white">#5A2D81</p>
+            </div>
+            <div class="bg-[#9B5DE5] p-4 rounded">
+              <p class="font-semibold text-white">Vibrant Violet</p>
+              <p class="text-white">#9B5DE5</p>
+            </div>
+            <div class="bg-[#6ACC60] p-4 rounded">
+              <p class="font-semibold text-white">Accent Green</p>
+              <p class="text-white">#6ACC60</p>
+            </div>
+            <div class="bg-[#333333] p-4 rounded">
+              <p class="font-semibold text-white">Dark Chocolate</p>
+              <p class="text-white">#333333</p>
+            </div>
+        
+          </div>
+        </section>
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">2</span>
+            Core Features
+          </h2>
+          <div class="ml-12 space-y-4">
+            <div class="border-l-4 border-blue-600 pl-4">
+              <h3 class="font-bold text-gray-800 text-lg">Feed Wall</h3>
+              <p class="text-gray-600">Latest uploads, trending resources, filtered by tags, infinite scroll pagination</p>
+            </div>
+            <div class="border-l-4 border-blue-600 pl-4">
+              <h3 class="font-bold text-gray-800 text-lg">Search & Discovery</h3>
+              <p class="text-gray-600">Search with filters (subject, course, year level, file type), sort by newest/downloads/ratings</p>
+            </div>
+            <div class="border-l-4 border-blue-600 pl-4">
+              <h3 class="font-bold text-gray-800 text-lg">Upload</h3>
+              <p class="text-gray-600">File picker for PDF, PNG, DOCX, XLSX with metadata form and Cloudinary integration</p>
+            </div>
+            <div class="border-l-4 border-blue-600 pl-4">
+              <h3 class="font-bold text-gray-800 text-lg">Notifications</h3>
+              <p class="text-gray-600">New uploads in followed subjects, download milestones, system announcements</p>
+            </div>
+            <div class="border-l-4 border-blue-600 pl-4">
+              <h3 class="font-bold text-gray-800 text-lg">Profile</h3>
+              <p class="text-gray-600">User stats, uploads history, saved resources, follow subjects</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">3</span>
+            Database Schema (MongoDB)
+          </h2>
+          
+          <div class="ml-12 space-y-6">
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2 text-lg">Users Collection</h3>
+              <div class="bg-gray-50 p-4 rounded font-mono text-sm">
+                <p class="text-gray-700">_id: ObjectId</p>
+                <p class="text-gray-700">firebaseUid: String</p>
+                <p class="text-gray-700">email: String</p>
+                <p class="text-gray-700">displayName: String</p>
+                <p class="text-gray-700">photoURL: String</p>
+                <p class="text-gray-700">institution: String</p>
+                <p class="text-gray-700">yearLevel: String</p>
+                <p class="text-gray-700">bio: String</p>
+                <p class="text-gray-700">followedSubjects: [String]</p>
+                <p class="text-gray-700">uploadCount: Number</p>
+                <p class="text-gray-700">downloadCount: Number</p>
+                <p class="text-gray-700">createdAt: Date</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2 text-lg">Resources Collection</h3>
+              <div class="bg-gray-50 p-4 rounded font-mono text-sm">
+                <p class="text-gray-700">_id: ObjectId</p>
+                <p class="text-gray-700">title: String</p>
+                <p class="text-gray-700">description: String</p>
+                <p class="text-gray-700">uploaderId: ObjectId</p>
+                <p class="text-gray-700">uploaderName: String</p>
+                <p class="text-gray-700">fileUrl: String (Cloudinary URL)</p>
+                <p class="text-gray-700">fileType: String (pdf, png, docx)</p>
+                <p class="text-gray-700">fileSize: Number</p>
+                <p class="text-gray-700">thumbnailUrl: String</p>
+                <p class="text-gray-700">cloudinaryPublicId: String</p>
+                <p class="text-gray-700">subject: String</p>
+                <p class="text-gray-700">course: String</p>
+                <p class="text-gray-700">yearLevel: String</p>
+                <p class="text-gray-700">institution: String</p>
+                <p class="text-gray-700">tags: [String]</p>
+                <p class="text-gray-700">downloadCount: Number</p>
+                <p class="text-gray-700">viewCount: Number</p>
+                <p class="text-gray-700">rating: Number</p>
+                <p class="text-gray-700">createdAt: Date</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2 text-lg">Notifications Collection</h3>
+              <div class="bg-gray-50 p-4 rounded font-mono text-sm">
+                <p class="text-gray-700">_id: ObjectId</p>
+                <p class="text-gray-700">userId: ObjectId</p>
+                <p class="text-gray-700">type: String (new_upload, milestone, system)</p>
+                <p class="text-gray-700">title: String</p>
+                <p class="text-gray-700">message: String</p>
+                <p class="text-gray-700">resourceId: ObjectId</p>
+                <p class="text-gray-700">read: Boolean</p>
+                <p class="text-gray-700">createdAt: Date</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">4</span>
+            API Endpoints
+          </h2>
+          
+          <div class="ml-12 space-y-4">
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Auth</h3>
+              <div class="space-y-1 text-sm">
+                <p class="text-gray-700"><span class="font-semibold">POST</span> /api/auth/register - Register user</p>
+                <p class="text-gray-700"><span class="font-semibold">POST</span> /api/auth/login - Login (Firebase token)</p>
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/auth/me - Get current user</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Resources</h3>
+              <div class="space-y-1 text-sm">
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/resources - Get feed (with filters)</p>
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/resources/:id - Get single resource</p>
+                <p class="text-gray-700"><span class="font-semibold">POST</span> /api/resources - Upload new resource</p>
+                <p class="text-gray-700"><span class="font-semibold">PUT</span> /api/resources/:id - Update resource</p>
+                <p class="text-gray-700"><span class="font-semibold">DELETE</span> /api/resources/:id - Delete resource</p>
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/resources/search - Search resources</p>
+                <p class="text-gray-700"><span class="font-semibold">POST</span> /api/resources/:id/download - Track download</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">User</h3>
+              <div class="space-y-1 text-sm">
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/users/:id - Get user profile</p>
+                <p class="text-gray-700"><span class="font-semibold">PUT</span> /api/users/:id - Update profile</p>
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/users/:id/uploads - Get user uploads</p>
+                <p class="text-gray-700"><span class="font-semibold">POST</span> /api/users/follow-subject - Follow subject</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Notifications</h3>
+              <div class="space-y-1 text-sm">
+                <p class="text-gray-700"><span class="font-semibold">GET</span> /api/notifications - Get user notifications</p>
+                <p class="text-gray-700"><span class="font-semibold">PUT</span> /api/notifications/:id/read - Mark as read</p>
+                <p class="text-gray-700"><span class="font-semibold">DELETE</span> /api/notifications/:id - Delete notification</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">5</span>
+            App Screens (React Native)
+          </h2>
+          
+          <div class="ml-12 space-y-4">
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Auth Screens</h3>
+              <p class="text-gray-600">Login, Register, Onboarding (institution, year level)</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Main Tabs</h3>
+              <p class="text-gray-600">Feed (Home), Search, Upload, Notifications, Profile</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Secondary Screens</h3>
+              <p class="text-gray-600">Resource Detail, User Profile, Edit Profile, Settings, Filters Modal</p>
+            </div>
+          </div>
+        </section>
+
+     
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">6</span>
+            Setup Steps
+          </h2>
+          
+          <div class="ml-12 space-y-6">
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">1. Cloudinary Setup</h3>
+              <ul class="list-disc list-inside text-gray-600 space-y-1">
+                <li>Sign up at cloudinary.com</li>
+                <li>Get: Cloud Name, API Key, API Secret</li>
+                <li>Enable upload presets (optional)</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">2. Firebase Setup</h3>
+              <ul class="list-disc list-inside text-gray-600 space-y-1">
+                <li>Create project at console.firebase.google.com</li>
+                <li>Enable Email/Password authentication</li>
+                <li>Get config object for React Native</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">3. MongoDB Setup</h3>
+              <ul class="list-disc list-inside text-gray-600 space-y-1">
+                <li>Sign up at mongodb.com/atlas</li>
+                <li>Create cluster</li>
+                <li>Get connection string</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">4. Backend Setup</h3>
+              <div class="bg-gray-900 text-green-400 p-3 rounded font-mono text-xs mt-2">
+                <p>mkdir studyvault-backend</p>
+                <p>cd studyvault-backend</p>
+                <p>npm init -y</p>
+                <p>npm install express mongoose cors dotenv cloudinary multer firebase-admin</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">5. Frontend Setup</h3>
+              <div class="bg-gray-900 text-green-400 p-3 rounded font-mono text-xs mt-2">
+                <p>npx react-native init StudyVault</p>
+                <p>cd StudyVault</p>
+                <p>npm install nativewind tailwindcss @react-navigation/native</p>
+                <p>@react-navigation/bottom-tabs @react-navigation/native-stack</p>
+                <p>react-native-document-picker react-native-firebase axios zustand</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">7</span>
+            Environment Variables
+          </h2>
+          
+          <div class="ml-12 space-y-4">
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Backend (.env)</h3>
+              <div class="bg-gray-900 text-green-400 p-3 rounded font-mono text-xs">
+                <p>PORT=5000</p>
+                <p>MONGODB_URI=your_mongodb_connection_string</p>
+                <p>CLOUDINARY_CLOUD_NAME=your_cloud_name</p>
+                <p>CLOUDINARY_API_KEY=your_api_key</p>
+                <p>CLOUDINARY_API_SECRET=your_api_secret</p>
+                <p>FIREBASE_PROJECT_ID=your_project_id</p>
+                <p>FIREBASE_PRIVATE_KEY=your_private_key</p>
+                <p>FIREBASE_CLIENT_EMAIL=your_client_email</p>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-gray-800 mb-2">Frontend (.env)</h3>
+              <div class="bg-gray-900 text-green-400 p-3 rounded font-mono text-xs">
+                <p>API_URL=http://localhost:5000/api</p>
+                <p>FIREBASE_API_KEY=your_firebase_api_key</p>
+                <p>FIREBASE_AUTH_DOMAIN=your_auth_domain</p>
+                <p>FIREBASE_PROJECT_ID=your_project_id</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">8</span>
+            Development Flow
+          </h2>
+          
+          <div class="ml-12">
+            <div class="space-y-3">
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 1</span>
+                <p class="text-gray-700 pt-1">Setup backend + database + Cloudinary integration</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 2</span>
+                <p class="text-gray-700 pt-1">Build auth system (Firebase)</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 3</span>
+                <p class="text-gray-700 pt-1">Create upload functionality</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 4</span>
+                <p class="text-gray-700 pt-1">Build feed & search</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 5</span>
+                <p class="text-gray-700 pt-1">Add notifications</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 6</span>
+                <p class="text-gray-700 pt-1">Polish UI/UX</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded font-bold mr-3 text-sm">Phase 7</span>
+                <p class="text-gray-700 pt-1">Testing & deployment</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+            <span class="bg-blue-600 text-white px-3 py-1 rounded mr-3">9</span>
+            File Upload Flow
+          </h2>
+          
+          <div class="ml-12">
+            <div class="space-y-3">
+              <div class="flex items-start">
+                <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">1</span>
+                <p class="text-gray-700 pt-1">User selects file via document picker</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">2</span>
+                <p class="text-gray-700 pt-1">Frontend uploads to Cloudinary</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">3</span>
+                <p class="text-gray-700 pt-1">Get secure URL + public ID from Cloudinary</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">4</span>
+                <p class="text-gray-700 pt-1">Send metadata + URLs to backend</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">5</span>
+                <p class="text-gray-700 pt-1">Backend saves to MongoDB</p>
+              </div>
+              <div class="flex items-start">
+                <span class="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">6</span>
+                <p class="text-gray-700 pt-1">Trigger notification to followers of that subject</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="text-center mt-12 pt-6 border-t border-gray-300">
+          <p class="text-gray-500 text-sm">StudyVault - Educational Resource Archive</p>
+          <p class="text-gray-400 text-xs mt-1">Ready to build? Start with Phase 1: Backend Setup</p>
+        </div>
+</body>
+</html>
